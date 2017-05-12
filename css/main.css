@@ -1,1 +1,24 @@
 /* Escribe acá tus estilos*/
+body {
+	/*background-image: url(../images/bg.jpeg);*/
+	text-align: center;
+	margin: auto;
+}
+h2 {
+	color: #FA8258;
+
+}
+strong {
+	color: #B40404;
+
+}
+.formulario{
+	background: #F79F81;
+	color: white;
+	opacity: 0.7;
+	text-align: center;
+	padding: 50px;
+	border-radius:10px; 
+	-moz-border-radius:10px; /* Firefox */ 
+	-webkit-border-radius:10px; /* Safari y Chrome */ 
+}

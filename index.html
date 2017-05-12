@@ -3,35 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Té como señora</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header>
-		<h1>Tetería Té como Señora</h1>
+		<h2>Tetería Té como Señora</h2>
 	</header>
-	<section id="formulario">
-		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
+	<section id="formulario" class="formulario">
+		<p><h1>Bienvenid<strong>@</strong>s a la <strong>Tetería Té como Señora.</strong></h1> Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
-			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text">
+			<label for="Nombre"> Nombre:</label>
+			<input id="nombre" type="text" name="nombre" required><br>
+			<label for="Apellido"> Apellido:</label>
+			<input id="apellido" type="text" name="apellido" required><br>
 			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
+			<input id="email" type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required><br>
 			<label for="Dirección">Dirección: </label>
-			<input type="text">
+			<input id="direccion" type="text" name="direccion"><br>
 			<label for="Teléfono">Teléfono:</label>
-			<input type="text">
+			<input id="telefono" type="tel" name="telefono" pattern="[0-9]{9}" title="9 digitos" required><br>
 			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
+			<select id="pack" name="seleccion" required>
 				<option value="">Escoje tu opción</option>
-				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
-				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
-			</select>
+				<option value="negro">Pack de té clásico (Té negro)</option>
+				<option value="hierbas">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+				<option value="pack">Pack variedades (Té verde, rojo y blanco)</option>
+			</select><br>
 			<label for=""></label>
-			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
+			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos><br>
+			<!--<input type="submit" value="Submit">-->
 			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
 		</form>
 	</section>
